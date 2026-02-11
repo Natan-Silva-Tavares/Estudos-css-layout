@@ -1,0 +1,60 @@
+/* Container externo para demonstrar margin */
+.bm-wrapper {
+  background: white;
+  padding: 32px;
+}
+/* Caixa principal que mostra margin, border, padding e content */
+.box {
+  width: 300px;
+  margin: 24px auto;
+  border: 6px solid #a4da93;
+  padding: 20px;
+  background: #abb3cf;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.box .inner {
+  background: #81a3ed; /* destaca o conteúdo interno */
+  padding: 12px;       /* padding dentro do content area */
+}
+/* Uma pequena legenda para visualizar medidas */
+.legend { font-family: Arial, sans-serif; color: #333; margin-top: 8px; }
+
+/* FLEXBOX EXAMPLE */
+.flex-demo {
+  margin-top: 48px;
+  padding: 20px;
+  background: linear-gradient(180deg,#fff7ed,#fff4e6);
+}
+
+/* Container flex: aqui controlamos alinhamento e distribuição */
+.flex-container {
+  display: flex;               
+  flex-direction: row;         
+  justify-content: space-between;
+  align-items: center;        
+  gap: 12px;                   
+  padding: 16px;
+  border: 2px dashed #ffa94d;
+  min-height: 120px;
+  background: #fffaf0;
+}
+
+.flex-item {
+  background: #ffd8a8;
+  padding: 12px 18px;
+  border-radius: 6px;
+  flex: 0 1 auto;
+}
+
+/* Exemplos de como mudar a ordem / comportamento */
+.flex-item.grow { flex: 1 1 auto; background:#ffd7a3; }
+.flex-item.center { align-self: center; }
+
+/* Estilo geral de página */
+body{
+     font-family:Roboto, Arial; color:#000000; padding: 28px;
+}
+h1,h2 { margin: 0 0 12px 0; }
+.container { max-width: 900px; margin: 0 auto; }

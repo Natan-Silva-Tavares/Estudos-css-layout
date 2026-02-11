@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Exemplos: Box Model & Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--box model -->
+  <div class="container">
+    <h1>Exemplos: Box Model e Flexbox</h1>
+    <section class="bm-wrapper" aria-label="Exemplo do Box Model">
+      <h2>Box Model (margin, border, padding, content)</h2>
+      <div class="box">
+        <div class="inner">
+          <strong>Área de conteúdo</strong>
+          <p>Este texto está dentro do box model. A largura declarada (300px)</p>
+          <p class="legend">Largura do content: <span class="mark">300px</span> | Padding: <span class="mark">20px</span> | Border: <span class="mark">6px</span> | Margin: <span class="mark">24px (vertical)</span></p>
+        </div>
+      </div>
+      <!-- Explicação de cada item -->
+      <p>Funções:
+        <div>
+          <li><strong>Content</strong>: é o conteúdo real (texto, imagens) — aqui 300px de largura.</li>
+          <li><strong>Padding</strong>: espaço interno entre o conteúdo e a borda — aumenta o espaço dentro da caixa.</li>
+          <li><strong>Border</strong>: a linha que delimita a caixa — tem espessura de 6px.</li>
+          <li><strong>Margin</strong>: espaço externo que separa a caixa de outros elementos.</li>
+        </div>
+      </p>
+    </section>
+
+    <!-- Flexbox -->
+    <section class="flex-demo" aria-label="Exemplo de Flexbox">
+      <h2>Flexbox (alinhamento e distribuição)</h2>
+      <p>O container abaixo usa <code>display: flex</code> — observe como os itens são distribuídos e alinhados.</p>
+
+      <!-- Container flex: as propriedades controlam comportamento dos itens filhos -->
+      <div class="flex-container">
+        <div class="flex-item">Item A</div>
+        <div class="flex-item grow">Item B (flex: 1 — cresce)</div>
+        <div class="flex-item">Item C</div>
+      </div>
+
+      <p style="max-width:720px;line-height:1.4;">Comentários:
+        <ul>
+          <li><strong>display: flex</strong>: transforma o container em flex container.</li>
+          <li><strong>flex-direction</strong>: define o eixo principal (row/column).</li>
+          <li><strong>justify-content</strong>: controla a distribuição no eixo principal (ex.: space-between).</li>
+          <li><strong>align-items</strong>: controla o alinhamento no eixo cruzado (vertical neste exemplo).</li>
+          <li><strong>flex</strong>: nos itens controla se crescem/encolhem — o item B usa <code>flex: 1</code> e ocupa o espaço disponível.</li>
+        </ul>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
